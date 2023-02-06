@@ -1,0 +1,172 @@
+
+      body {
+          font: 20px Montserrat, sans-serif;
+          line-height: 1.8;
+          color: #555555;
+          background-color:#F0F3F4 ;
+      }
+      p {
+        font-size: 16px;
+      }
+
+       
+   
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+        letter-spacing: 5px;
+        
+      }
+      .navbar-nav  li a:hover {
+        color: #fff !important;
+      }
+      
+      
+      
+      
+      
+      /* Social Media Icons */
+
+
+
+ ul {
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-wrap: wrap;
+	 border-radius: 10px;
+	 padding: 20px;
+	 width: 360px;
+	 background: #F0F3F4;
+	 box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+ ul li {
+	 position: relative;
+	 list-style: none;
+	 text-align: center;
+	 margin: 15px;
+}
+ ul li label {
+	 position: relative;
+	 cursor: pointer;
+}
+ ul li label input[type="checkbox"] {
+	 position: absolute;
+	 opacity: 0;
+}
+ ul li label :checked ~ .icon-box {
+	 box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1), inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+ ul li label :checked ~ .icon-box .fa {
+	 transform: scale(0.95);
+}
+ ul li label .icon-box {
+	 width: 60px;
+	 height: 60px;
+	 background: #ebf5fc;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1);
+	 border-radius: 10px;
+}
+ ul li label .icon-box .fa {
+	 font-size: 30px;
+	 color: #808080 ;
+	 
+}
+
+
+
+/* --------Social Icons-------- */
+/* Color Variables */
+/* Social Icon Mixin */
+ .social-icons {
+	 display: flex;
+	 position:center;
+	 bottom: 25px;
+	 right: 25px;
+}
+ .social-icon {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 width: 50px;
+	 height: 50px;
+	 margin: 0 0.7rem;
+	 border-radius: 50%;
+	 cursor: pointer;
+	 font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	 font-size: 1.5rem;
+	 text-decoration: none;
+	 transition: all 0.15s ease;
+}
+ .social-icon:hover {
+	 color: #fff;
+}
+ .social-icon:hover .tooltip {
+	 visibility: visible;
+	 opacity: 1;
+	 transform: translate(-50%, -150%);
+}
+ .social-icon:active {
+	 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+ .social-icon--twitter {
+	 background: #808080;
+	 color: #fff;
+}
+ .social-icon--twitter .tooltip {
+	 background: #808080;
+	 color: currentColor;
+}
+ .social-icon--twitter .tooltip:after {
+	 border-top-color: #808080;
+}
+
+
+
+ .social-icon i {
+	 position: relative;
+	 top: 1px;
+}
+/* Tooltips */
+ .tooltip {
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 padding: 0.4rem 0.6rem;
+	 border-radius: 40px;
+	 font-size: 0.4rem;
+	 font-weight: bold;
+	 opacity: 0;
+	 text-transform: uppercase;
+	 transform: translate(-50%, -100%);
+	 transition: all 0.3s ease;
+	 z-index: 1;
+}
+
+ .tooltip:after {
+	 display: block;
+	 position: absolute;
+	 bottom: 1px;
+	 left: 50%;
+	 width: 0;
+	 height: 0;
+	 content: "";
+	 border: solid;
+	 border-width: 10px 10px 0 10px;
+	 border-color: transparent;
+	 transform: translate(-50%, 100%);
+
+}
+ 
+ 
+ 
